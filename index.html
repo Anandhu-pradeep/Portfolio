@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.google.com https://www.gstatic.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://images.unsplash.com data: blob:; connect-src 'self' https://api.emailjs.com https://www.google.com; frame-src https://www.google.com;">
   <title>Portfolio | Anandhu Pradeep</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
@@ -320,8 +322,8 @@
           Combining commerce knowledge with programming expertise to create innovative, dark-luxury web experiences and scalable technical solutions.
         </p>
         <div class="reveal" style="transition-delay: 0.4s;">
-          <a href="https://drive.google.com/uc?export=download&id=12qhisbuTqx4j2rW5fCLGWpAkV-6dgNdr" target="_blank" class="btn hover-target" style="margin-left: 20px;"><i class="fas fa-download" style="margin-right:8px;"></i>Download CV</a>
-          <a href="https://drive.google.com/drive/folders/12gK3jTAqDSd5ckBXB6-VNV8OiaE7dMnF?usp=drive_link" target="_blank" class="btn hover-target" style="margin-left: 20px; border-color: var(--accent-violet); color: var(--accent-violet);"><i class="fas fa-certificate" style="margin-right:8px;"></i>Certificates</a>
+          <a href="https://drive.google.com/uc?export=download&id=12qhisbuTqx4j2rW5fCLGWpAkV-6dgNdr" target="_blank" rel="noopener noreferrer" class="btn hover-target" style="margin-left: 20px;"><i class="fas fa-download" style="margin-right:8px;"></i>Download CV</a>
+          <a href="https://drive.google.com/drive/folders/12gK3jTAqDSd5ckBXB6-VNV8OiaE7dMnF?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn hover-target" style="margin-left: 20px; border-color: var(--accent-violet); color: var(--accent-violet);"><i class="fas fa-certificate" style="margin-right:8px;"></i>Certificates</a>
         </div>
       </div>
     </div>
@@ -377,7 +379,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/Series_StudentFeedback" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/Series_StudentFeedback" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span>Feedback</span>
               </a>
             </div>
@@ -395,7 +397,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/Notes_app" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/Notes_app" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span>Notes App</span>
               </a>
             </div>
@@ -413,7 +415,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/rock-paper-succor-s" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/rock-paper-succor-s" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span>R/P/S Game</span>
               </a>
             </div>
@@ -431,7 +433,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/question_form" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/question_form" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span>Question Form</span>
               </a>
             </div>
@@ -449,7 +451,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/calculator" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/calculator" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span>Calculator Repo</span>
               </a>
             </div>
@@ -467,7 +469,7 @@
               </div>
             </div>
             <div class="proj-back glass">
-              <a href="https://github.com/Anandhu-pradeep/Flow_DiagramGenrator" target="_blank" class="proj-link-giant">
+              <a href="https://github.com/Anandhu-pradeep/Flow_DiagramGenrator" target="_blank" rel="noopener noreferrer" class="proj-link-giant">
                 <i class="fab fa-github"></i> <span style="font-size: 0.8rem;">Flow_DiagramGenrator</span>
               </a>
             </div>
@@ -536,6 +538,7 @@
           <textarea id="message" rows="4" required></textarea>
           <label>Message</label><div class="line"></div>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LcT0bEsAAAAAEXanSCa5pxFkbgIphhlOcacxIqH" data-theme="dark" style="margin-top: -5px;"></div>
         <button class="btn hover-target" id="sendBtn">Send Message</button>
       </div>
 
@@ -549,15 +552,15 @@
           <div class="c-icon"><i class="fas fa-phone"></i></div>
           <div class="c-text"><h4>Phone Number</h4><p>+91 9383469371</p></div>
         </a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Pathanamthitta,+Kerala,+India" target="_blank" class="c-item hover-target">
+        <a href="https://www.google.com/maps/search/?api=1&query=Pathanamthitta,+Kerala,+India" target="_blank" rel="noopener noreferrer" class="c-item hover-target">
           <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="c-text"><h4>Location</h4><p>India, Kerala, Pathanamthitta</p></div>
         </a>
         <div class="social-row">
-          <a href="https://github.com/Anandhu-pradeep" target="_blank" class="soc-btn hover-target"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/anandhu-pradeep1/" target="_blank" class="soc-btn hover-target"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/anandhu_.pradeep?igsh=c3VlbmM4N21uaWtr" target="_blank" class="soc-btn hover-target"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/qr/E3J3FIY2YOBGH1" target="_blank" class="soc-btn hover-target"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/Anandhu-pradeep" target="_blank" rel="noopener noreferrer" class="soc-btn hover-target"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anandhu-pradeep1/" target="_blank" rel="noopener noreferrer" class="soc-btn hover-target"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/anandhu_.pradeep?igsh=c3VlbmM4N21uaWtr" target="_blank" rel="noopener noreferrer" class="soc-btn hover-target"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/qr/E3J3FIY2YOBGH1" target="_blank" rel="noopener noreferrer" class="soc-btn hover-target"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
@@ -635,9 +638,31 @@
       const email   = document.getElementById('email').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      // Basic validation
+      // Validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!name || !email || !message) {
         btn.innerHTML = "Fill all fields! <i class='fas fa-exclamation'></i>";
+        btn.style.color = "#ff2a85";
+        setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; }, 2500);
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        btn.innerHTML = "Invalid email! <i class='fas fa-exclamation'></i>";
+        btn.style.color = "#ff2a85";
+        setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; }, 2500);
+        return;
+      }
+      if (name.length > 100 || message.length > 2000) {
+        btn.innerHTML = "Input too long! <i class='fas fa-exclamation'></i>";
+        btn.style.color = "#ff2a85";
+        setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; }, 2500);
+        return;
+      }
+
+      // reCAPTCHA v2 — verify user completed the checkbox
+      const recaptchaToken = grecaptcha.getResponse();
+      if (!recaptchaToken) {
+        btn.innerHTML = "Complete CAPTCHA! <i class='fas fa-exclamation'></i>";
         btn.style.color = "#ff2a85";
         setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; }, 2500);
         return;
@@ -648,10 +673,11 @@
       btn.disabled = true;
 
       const templateParams = {
-        from_name:    name,
-        from_email:   email,
-        message:      message,
-        to_name:      "Anandhu"
+        from_name:           name,
+        from_email:          email,
+        message:             message,
+        to_name:             "Anandhu",
+        'g-recaptcha-response': recaptchaToken
       };
 
       emailjs.send(
@@ -664,11 +690,13 @@
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
+        grecaptcha.reset();
         setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; btn.disabled = false; }, 3500);
       }, (error) => {
         console.error('EmailJS Error:', error);
         btn.innerHTML = "Failed. Try again <i class='fas fa-times'></i>";
         btn.style.color = "#ff2a85";
+        grecaptcha.reset();
         setTimeout(() => { btn.innerText = "Send Message"; btn.style.color = ""; btn.disabled = false; }, 3000);
       });
     });
